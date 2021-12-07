@@ -63,6 +63,7 @@ class GameMain:
 
         else:
             self.gameEnd = True
+            self.display.UpdateDisplay(self.board, self.choicepiece, self.box, self.turn, self.phase)
             return
 
         self.turn = (self.turn + 1) % 2
