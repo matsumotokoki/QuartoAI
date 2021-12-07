@@ -18,6 +18,7 @@ class GameMain:
         ]
         self.gameEnd = False
         self.turn = 0
+        self.phase = "choice"
         self.winner = None
         self.turncounter = 0
         self.display = util.Display()
@@ -38,23 +39,26 @@ class GameMain:
         return self.winner
     
     def gameLoop(self):
-        self.display.UpdateDisplay(self.board, self.choicepiece, self.box)
+        self.display.UpdateDisplay(self.board, self.choicepiece, self.box, self.turn, self.phase)
         if self.choicepiece is not None:
             util.p.print(str(self.turncounter)+' player' + str(self.turn+1)+ ' put')
             self.putPhase()
             self.drawPutPos()
             self.drawBoard()
             self.turncounter += 1
-            self.display.UpdateDisplay(self.board, self.choicepiece, self.box)
+            self.display.UpdateDisplay(self.board, self.choicepiece, self.box, self.turn, self.phase)
+            self.phase = "choice"
             if self.gameEnd: return
         
+        self.display.UpdateDisplay(self.board, self.choicepiece, self.box, self.turn, self.phase)
         if len(self.box.piecelist) != 0:
             self.drawBox()
             util.p.print(str(self.turncounter)+ ' Player' + str(self.turn+1)+ ' choice')
             self.choicePhase()
             self.drawChoicePiece()
             self.drawBoard()
-            self.display.UpdateDisplay(self.board, self.choicepiece, self.box)
+            self.display.UpdateDisplay(self.board, self.choicepiece, self.box, self.turn, self.phase)
+            self.phase = "put"
             if self.gameEnd: return
 
         else:
