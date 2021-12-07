@@ -4,7 +4,7 @@
 + Quarto の AI部分
 + pygameによる可視化
 
-## demo
+## Demo
 ![https://www.youtube.com/watch?v=PEiNcaztMOE](./demo.gif "https://www.youtube.com/watch?v=PEiNcaztMOE")
 
 ## How to Use
@@ -12,7 +12,7 @@
 $ python PlayGame.py
 ```
 
-## requirements
+## Requirements
 + pygame 2.0
 + numpy 
  
