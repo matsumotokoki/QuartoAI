@@ -1,5 +1,6 @@
 from src.gamesys import gamemain
 
 if __name__ == "__main__":
-    gamemain.winningPercentageRun(10)
+    num = 1
+    gamemain.winningPercentageRun(num)
 
