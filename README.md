@@ -15,4 +15,6 @@ $ python PlayGame.py
 ## Requirements
 + pygame 2.0
 + numpy 
- 
+
+## 参考にさせていただいたサイト
++ https://github.com/keyhole0/Ktuarto
