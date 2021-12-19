@@ -1,7 +1,7 @@
 # ロボット設計製作特論
 
 ## TL;DR
-+ Quarto の AI部分
++ Quarto
 + pygameによる可視化
 
 ## Demo
