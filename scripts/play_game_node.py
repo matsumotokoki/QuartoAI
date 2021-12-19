@@ -9,7 +9,7 @@ import rospy
 
 def main():
     num = 1
-    rospy.init_node('play_game_node', anonymous=True)
+    rospy.init_node('play_game_node')
     gamemain.winningPercentageRun(num)
 
 if __name__ == '__main__':
