@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>quarto_ai</name>
+  <version>0.0.0</version>
+  <description>The QuartoAI package</description>
+  <maintainer email="jane.doe@example.com">Jane Doe</maintainer>
+  <license>todo</license>
+  <buildtool_depend>catkin</buildtool_depend>
+</package>
